@@ -161,6 +161,13 @@
   .proj.feat .pbody h3{font-size:30px}
   .pbody p{color:var(--muted);font-size:14.5px;margin-top:13px;flex:1}
   .proj.feat .pbody p{font-size:16px;max-width:54ch}
+  .pbody p.lead{flex:0}
+  .pbody ul.pts{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:7px;flex:1;align-content:start}
+  .pbody ul.pts li{position:relative;padding-left:18px;color:var(--muted);font-size:14px;line-height:1.45}
+  .pbody ul.pts li::before{content:"";position:absolute;left:2px;top:.55em;width:6px;height:6px;border-radius:50%;background:var(--cyan)}
+  .proj.feat .pbody ul.pts li{font-size:15px}
+  .tags.aws{margin-top:10px;align-items:center}
+  .tags.aws b{font-family:var(--mono);font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--cyan);margin-right:3px}
   .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
   .tags span{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line-2);border-radius:7px;padding:4px 9px}
   .plinks{display:flex;gap:20px;margin-top:20px;flex-wrap:wrap}
@@ -475,8 +482,10 @@
         <div class="pbody">
           <div class="role">python, aws serverless, multi-agents, gouvernance</div>
           <h3>Relais, plateforme d'agents IA pour la DSI</h3>
-          <p>Une plateforme multi-agents pour la DSI : <b>9 agents spécialisés</b> agissent dans le SI (ITSM, annuaire, cloud, sécurité) via des connecteurs MCP, chacun avec ses droits. Les actions sensibles attendent l'<b>accord d'un humain</b>, un <b>garde-fou</b> bloque injections et sorties de périmètre, un <b>arrêt d'urgence</b> coupe tout, et chaque décision est <b>tracée et rejouable</b>. Conçu et développé de bout en bout.</p>
-          <div class="tags"><span>LangChain</span><span>LangGraph</span><span>MCP</span><span>Mistral AI</span><span>Python</span><span>FastAPI</span><span>Three.js</span><span>AWS</span><span>Terraform</span></div>
+          <p class="lead"><b>9 agents IA</b> qui agissent dans le SI de l'entreprise (ITSM, annuaire, cloud, sécurité), sous contrôle humain. Conçu et développé de bout en bout.</p>
+          <ul class="pts"><li>Validation humaine des actions sensibles</li><li>Garde-fou anti-injection + arrêt d'urgence</li><li>Chaque décision tracée et rejouable</li></ul>
+          <div class="tags"><span>LangChain</span><span>LangGraph</span><span>MCP</span><span>Mistral AI</span><span>Python</span><span>FastAPI</span><span>Three.js</span><span>Terraform</span></div>
+          <div class="tags aws"><b>AWS</b><span>Lambda</span><span>API Gateway</span><span>Step Functions</span><span>DynamoDB</span><span>S3 Object Lock</span><span>SQS</span><span>SNS</span><span>EventBridge Scheduler</span><span>CloudWatch</span><span>SSM Parameter Store</span><span>IAM</span><span>Budgets</span></div>
           <span class="p-open" style="margin-top:16px">Aperçu du produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </div>
       </article>
@@ -489,8 +498,9 @@
         <div class="pbody">
           <div class="role">python, aws serverless, llm, finops</div>
           <h3>GPU Watch, surveillance GPU en temps réel</h3>
-          <p>Outil d'observabilité qui collecte les métriques d'un GPU NVIDIA toutes les 5 s (nvidia-smi), via une API serverless AWS Lambda sécurisée par jeton. Séries temporelles dans DynamoDB, alertes surchauffe et inactivité (CloudWatch, SNS), et calcul en direct du coût, du gaspillage et des économies possibles (arrêt automatique, instances Spot). Dashboard temps réel (Chart.js) et rapport FinOps rédigé par un LLM open source (Qwen 2.5) fiabilisé par ancrage : les calculs sont faits en Python, le modèle ne fait que les reformuler.</p>
-          <div class="tags"><span>Python</span><span>AWS Lambda</span><span>DynamoDB</span><span>CloudWatch</span><span>SNS</span><span>Qwen 2.5</span><span>Chart.js</span></div>
+          <p class="lead">Surveille un GPU en temps réel et chiffre l'argent gaspillé.</p>
+          <ul class="pts"><li>Métriques toutes les 5 s, alertes surchauffe / inactivité</li><li>Coût et économies possibles calculés en direct</li><li>Rapport FinOps rédigé par un LLM open source</li></ul>
+          <div class="tags"><span>AWS Lambda</span><span>DynamoDB</span><span>CloudWatch</span><span>Qwen 2.5</span></div>
           <span class="p-open" style="margin-top:16px">Aperçu du projet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span>
         </div>
       </article>
@@ -503,8 +513,9 @@
         <div class="pbody">
           <div class="role">react, duckdb-wasm, fastapi, agent autonome</div>
           <h3>Datalyst, analyse de données augmentée par IA</h3>
-          <p>Application SaaS d'analyse de données 100% navigateur : import CSV/Excel, nettoyage en un clic, exploration statistique et visualisation. Sa couche IA va du text-to-SQL (auto-corrigé en cas d'erreur) jusqu'à un agent autonome qui décide lui-même ses requêtes d'exploration, tour après tour, puis synthétise ses découvertes. Les données brutes ne quittent jamais le navigateur (DuckDB-WASM) ; tout SQL généré par l'IA est validé en lecture seule côté serveur via analyse d'arbre syntaxique (sqlglot).</p>
-          <div class="tags"><span>React</span><span>TypeScript</span><span>DuckDB-WASM</span><span>FastAPI</span><span>Mistral AI</span><span>sqlglot</span></div>
+          <p class="lead">Analyse de données dans le navigateur, avec un agent IA qui explore à ta place.</p>
+          <ul class="pts"><li>Text-to-SQL auto-corrigé</li><li>Agent autonome qui enchaîne ses propres requêtes</li><li>Données 100 % locales, SQL de l'IA validé en lecture seule</li></ul>
+          <div class="tags"><span>React</span><span>DuckDB-WASM</span><span>FastAPI</span><span>Mistral AI</span></div>
           <div class="plinks">
             <a class="plink" href="https://github.com/narimanekahli03/datalyst" target="_blank" rel="noopener">Code
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
@@ -522,8 +533,9 @@
         <div class="pbody">
           <div class="role">smolagents, hugging face</div>
           <h3>Agent IA de veille technologique</h3>
-          <p>Un agent autonome qui cherche, lit et synthétise l'état de l'art (web + arXiv) en une note de veille sourcée. Robuste (garde-temps et bascule de modèle) et déployé en ligne.</p>
-          <div class="tags"><span>Python</span><span>smolagents</span><span>LLM</span><span>RAG</span><span>Gradio</span></div>
+          <p class="lead">Un agent autonome qui transforme l'état de l'art en une note de veille sourcée.</p>
+          <ul class="pts"><li>Recherche web + arXiv</li><li>Robuste : garde-temps et bascule de modèle</li><li>Déployé en ligne sur Hugging Face</li></ul>
+          <div class="tags"><span>Python</span><span>smolagents</span><span>RAG</span><span>Gradio</span></div>
           <div class="plinks">
             <a class="plink" href="https://huggingface.co/spaces/Narimanekhl/Agent-IA-de-veille-technologique" target="_blank" rel="noopener">Démo
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
@@ -542,8 +554,9 @@
         <div class="pbody">
           <div class="role">typescript, mistral, agent ia</div>
           <h3>Agent de synthèse de réunions</h3>
-          <p>Un agent IA qui lit une transcription (texte ou export Teams .vtt) et en extrait une sortie structurée et exploitable : décisions actées, actions Qui / Quoi / Pour quand, points en suspens, chaque élément tracé jusqu'à sa citation source. Pipeline en 4 étapes affiché en direct (streaming SSE) ; sorties du LLM validées par schéma (Zod) avec retry, et conversion des échéances confiée à un module déterministe testé. Exports .ics, Word, Markdown et email.</p>
-          <div class="tags"><span>TypeScript</span><span>React</span><span>Express</span><span>Mistral</span><span>Zod</span><span>SSE</span><span>Docker</span></div>
+          <p class="lead">Transforme une transcription Teams en décisions et actions qui / quoi / quand.</p>
+          <ul class="pts"><li>Chaque élément relié à sa citation source</li><li>Sorties du LLM validées par schéma</li><li>Export .ics, Word, Markdown, email</li></ul>
+          <div class="tags"><span>TypeScript</span><span>React</span><span>Mistral</span><span>Zod</span></div>
           <div class="plinks">
             <a class="plink" href="https://github.com/narimanekahli03/meeting-action-agent" target="_blank" rel="noopener">Code
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
@@ -560,7 +573,8 @@
         <div class="pbody">
           <div class="role">recherche, deep learning</div>
           <h3>Détection de maladies des plantes</h3>
-          <p>Modèle de segmentation (YOLOv5) entraîné de l'annotation à l'évaluation (précision, rappel, F1), déployé dans une application web. Projet de recherche.</p>
+          <p class="lead">Détecte les maladies des plantes à partir d'une photo. Projet de recherche.</p>
+          <ul class="pts"><li>Segmentation YOLOv5, de l'annotation à l'évaluation</li><li>Mesuré en précision, rappel et F1</li><li>Déployé dans une application web</li></ul>
           <div class="tags"><span>PyTorch</span><span>YOLOv5</span><span>Computer Vision</span></div>
           <div class="plinks"><span class="p-open" style="margin-top:0">Voir le produit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div>
         </div>
