@@ -100,7 +100,7 @@
   .hero-inner a,.hero-inner button,.hero-inner .hero-domains span{pointer-events:auto}
   .hero .eyebrow{margin-bottom:26px}
   .hero h1{font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:.92;
-    font-size:clamp(50px,10vw,126px);text-wrap:balance}
+    font-size:clamp(44px,6.8vw,92px);text-wrap:balance}
   .hero h1 .l2{display:block;background:linear-gradient(100deg,var(--cyan),var(--azure),var(--violet),var(--magenta));
     -webkit-background-clip:text;background-clip:text;color:transparentbackground-size:220% auto;}
   .hero .lede{margin-top:30px;max-width:620px;font-size:clamp(17px,2.2vw,21px);color:var(--ink);opacity:.92}
@@ -230,7 +230,8 @@
   /* ---------- contact ---------- */
   .contact{text-align:center;padding:150px 0}
   .contact .big{font-family:var(--disp);font-weight:800;letter-spacing:-.03em;line-height:.98;
-    font-size:clamp(40px,8vw,92px)}
+    font-size:clamp(34px,5vw,64px)}
+  .contact p.big{max-width:none;color:var(--ink)}
   .contact .big .g{background:linear-gradient(100deg,var(--cyan),var(--azure),var(--violet),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
   .contact p{color:var(--muted);margin:24px auto 0;max-width:520px;font-size:18px}
   .cbtns{display:flex;flex-wrap:wrap;gap:15px;justify-content:center;margin-top:44px}
@@ -270,7 +271,7 @@
     .nav{padding:0 18px;height:58px}
     .band{padding:66px 0}
     .hero{padding:92px 0 64px;min-height:auto}
-    .hero h1{font-size:clamp(46px,15vw,88px)}
+    .hero h1{font-size:clamp(40px,12vw,64px)}
     .hero .lede{font-size:16px;margin-top:22px}
     .cta-row{gap:10px;margin-top:28px}
     .btn{padding:12px 18px;font-size:12px}
@@ -281,7 +282,7 @@
     .proj.feat .pbody{padding:24px}
     .proj.feat h3{font-size:22px}
     .contact{padding:88px 0}
-    .contact .big{font-size:clamp(34px,10vw,56px)}
+    .contact .big{font-size:clamp(30px,9vw,44px)}
     .mk{padding:12px}
     .tl{margin-left:2px}
     .cbtns{gap:10px}
@@ -332,15 +333,15 @@
 #ragLauncher:hover .hb-happy,#ragLauncher:focus-visible .hb-happy{opacity:1}
 #ragLauncher:hover .hb-lids,#ragLauncher:focus-visible .hb-lids{opacity:0}
 #orbTease{position:absolute;right:112px;bottom:34px;width:max-content;max-width:244px;border-radius:16px 16px 5px 16px;
-  background:rgba(17,17,32,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(169,180,255,.22);
-  box-shadow:0 24px 60px -24px rgba(0,0,0,.9),0 0 30px -12px rgba(91,107,255,.5),inset 0 1px 0 rgba(255,255,255,.06);
+  background:rgba(17,17,32,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(246,197,96,.24);
+  box-shadow:0 24px 60px -24px rgba(0,0,0,.9),0 0 30px -12px rgba(255,77,157,.45),inset 0 1px 0 rgba(255,255,255,.06);
   opacity:0;transform:translateX(12px) scale(.94);transform-origin:right bottom;pointer-events:none;
   transition:opacity .35s ease,transform .5s cubic-bezier(.2,.9,.3,1.2)}
 #orbTease.show{opacity:1;transform:none;pointer-events:auto}
 #orbTease .ot-main{all:unset;display:block;cursor:pointer;padding:12px 36px 13px 15px;border-radius:inherit}
 #orbTease .ot-main:focus-visible{outline:2px solid var(--violet);outline-offset:2px}
-#orbTease .ot-live{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#A9B4FF}
-#orbTease .ot-live i{width:6px;height:6px;border-radius:50%;background:#FF8CBF;box-shadow:0 0 8px #FF4D9D;animation:otPulse 1.8s ease-in-out infinite}
+#orbTease .ot-live{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:#F6C560}
+#orbTease .ot-live i{width:6px;height:6px;border-radius:50%;background:#F6C560;box-shadow:0 0 8px #F6C560;animation:otPulse 1.8s ease-in-out infinite}
 @keyframes otPulse{50%{opacity:.3}}
 #orbTease b{display:block;font-family:var(--disp);font-size:15px;font-weight:700;color:var(--ink);line-height:1.3;margin-top:6px}
 #orbTease .ot-sub{display:block;font-size:12.5px;color:var(--muted);margin-top:3px}
@@ -400,7 +401,7 @@
 <script>
 /* ===== Traduction FR / EN ===== */
 (function(){
-  var D={"profil": "profile", "projets": "projects", "CV ↓": "Resume ↓", "Forward Deployed Engineer, IA générative, Agents & Data Science": "Forward Deployed Engineer, Generative AI, Agents & Data Science", "Agents IA": "AI Agents", "Voir mes produits": "See my products", "Me contacter": "Get in touch", "Ouverte aux opportunités en CDI": "Open to full-time roles", "défiler": "scroll", "Ce que je construis": "What I build", "Des produits d'IA réels, de l'idée à la production.": "Real AI products, from idea to production.", "Agent de veille": "Tech-watch agent", "Synthèse de réunions": "Meeting summaries", "Agents IA gouvernés pour la DSI": "Governed AI agents for IT departments", "Analyse & nettoyage de données, 100% navigateur": "Data analysis & cleaning, 100% in-browser", "Observabilité & FinOps GPU en temps réel": "Real-time GPU observability & FinOps", "RAG + arXiv → note de veille sourcée": "RAG + arXiv → sourced research brief", "Transcription → compte-rendu actionnable": "Transcript → actionable minutes", "Détection de maladies (YOLOv5-Polygon)": "Plant disease detection (YOLOv5-Polygon)", "Voir le produit →": "View product →", "Voir le produit": "View product", "Profil": "Profile", "Mon parcours en avant-vente m'a appris à traduire un besoin métier en solution technique crédible, et à dialoguer autant avec les équipes techniques qu'avec les clients.": "My presales background taught me to turn a business need into a credible technical solution, and to talk as easily with engineering teams as with clients.", "Rôle": "Role", "Basée à": "Based in", "Ingénierie": "Engineering", "Langues": "Languages", "Projets": "Projects", "Une sélection en IA générative, agents et data science, avec des démos publiques et du code ouvert.": "A selection of generative AI, agent and data science work, with public demos and open-source code.", "PROJET PHARE, PLATEFORME MULTI-AGENTS": "FLAGSHIP PROJECT, MULTI-AGENT PLATFORM", "OBSERVABILITÉ, FINOPS, LLM": "OBSERVABILITY, FINOPS, LLM", "DATA + AGENT IA AUTONOME": "DATA + AUTONOMOUS AI AGENT", "AGENT IA, DÉPLOYÉ": "AI AGENT, DEPLOYED", "AGENT IA, TYPESCRIPT": "AI AGENT, TYPESCRIPT", "python, aws serverless, multi-agents, gouvernance": "python, aws serverless, multi-agent, governance", "react, duckdb-wasm, fastapi, agent autonome": "react, duckdb-wasm, fastapi, autonomous agent", "typescript, mistral, agent ia": "typescript, mistral, ai agent", "recherche, deep learning": "research, deep learning", "Relais, plateforme d'agents IA pour la DSI": "Relais, an AI agent platform for IT departments", "GPU Watch, surveillance GPU en temps réel": "GPU Watch, real-time GPU monitoring", "Datalyst, analyse de données augmentée par IA": "Datalyst, AI-augmented data analysis", "Agent IA de veille technologique": "AI tech-watch agent", "Agent de synthèse de réunions": "Meeting summary agent", "Détection de maladies des plantes": "Plant disease detection", "Validation humaine des actions sensibles": "Human approval for sensitive actions", "Garde-fou anti-injection + arrêt d'urgence": "Anti-injection guardrail + kill switch", "Chaque décision tracée et rejouable": "Every decision traced and replayable", "Surveille un GPU en temps réel et chiffre l'argent gaspillé.": "Monitors a GPU in real time and puts a number on wasted spend.", "Métriques toutes les 5 s, alertes surchauffe / inactivité": "Metrics every 5 s, overheating / idle alerts", "Coût et économies possibles calculés en direct": "Live cost and potential savings", "Rapport FinOps rédigé par un LLM open source": "FinOps report written by an open-source LLM", "Analyse de données dans le navigateur, avec un agent IA qui explore à ta place.": "In-browser data analysis, with an AI agent that explores the data for you.", "Text-to-SQL auto-corrigé": "Self-correcting text-to-SQL", "Agent autonome qui enchaîne ses propres requêtes": "Autonomous agent that chains its own queries", "Données 100 % locales, SQL de l'IA validé en lecture seule": "Data stays 100% local, AI-generated SQL validated as read-only", "Démo à venir": "Demo coming soon", "Aperçu du produit": "Product preview", "Aperçu du projet": "Project preview", "Un agent autonome qui transforme l'état de l'art en une note de veille sourcée.": "An autonomous agent that turns the state of the art into a sourced research brief.", "Recherche web + arXiv": "Web + arXiv search", "Robuste : garde-temps et bascule de modèle": "Robust: timeouts and model fallback", "Déployé en ligne sur Hugging Face": "Deployed online on Hugging Face", "Démo": "Demo", "Transforme une transcription Teams en décisions et actions qui / quoi / quand.": "Turns a Teams transcript into decisions and who / what / when action items.", "Chaque élément relié à sa citation source": "Every item linked to its source quote", "Sorties du LLM validées par schéma": "Schema-validated LLM outputs", "Export .ics, Word, Markdown, email": "Export to .ics, Word, Markdown, email", "Détecte les maladies des plantes à partir d'une photo. Projet de recherche.": "Detects plant diseases from a photo. Research project.", "Segmentation YOLOv5, de l'annotation à l'évaluation": "YOLOv5 segmentation, from annotation to evaluation", "Mesuré en précision, rappel et F1": "Measured on precision, recall and F1", "Déployé dans une application web": "Deployed in a web app", "IA générative & Data Science": "Generative AI & Data Science", "Développement": "Development", "Data & Pilotage": "Data & Delivery", "Dossiers CIR": "CIR R&D tax credit filings", "Avant-vente, RFP": "Presales, RFP", "Des acquis validés par les acteurs qui font le secteur : IA, deep learning et cloud.": "Skills validated by the companies that shape the field: AI, deep learning and cloud.", "vérifié": "verified", "voir ↗": "view ↗", "Parcours": "Experience", "Trajectoire.": "Career path.", "Janv. 2026 → Présent": "Jan 2026 → Present", "Oct. 2024 → Sep. 2025": "Oct 2024 → Sep 2025", "Juin 2023 → Oct. 2024": "Jun 2023 → Oct 2024", "Ingénieure IA & Développement / Bid Manager": "AI & Software Engineer / Bid Manager", "Ingénieure d'Affaires IT": "IT Business Engineer", "Neurones IT, Paris, alternance": "Neurones IT, Paris, work-study", "KeyBox, CDI": "KeyBox, full-time", "Laboratoire LISIC": "LISIC Laboratory", "Avant-vente": "Presales", "AO": "Tenders", "CDC": "Specs", "Projet de recherche en vision par ordinateur : détection de maladies des plantes par segmentation (YOLOv5), de l'annotation et l'entraînement à l'évaluation (précision, rappel, F1) jusqu'au déploiement d'une application de diagnostic (Streamlit).": "Computer vision research project: plant disease detection through segmentation (YOLOv5), from annotation and training to evaluation (precision, recall, F1) and deployment of a diagnostic app (Streamlit).", "Disponible pour des opportunités en CDI (IA, Data Science, AIOps, Bid Manager), en Île-de-France et à distance.": "Available for full-time roles (AI, Data Science, AIOps, Bid Manager), in the Paris area or remote.", "Télécharger le CV": "Download resume (FR)", "retour en haut ↑": "back to top ↑", "Assistant IA": "AI Assistant", "Une question sur mon profil ?": "Any question about my profile?", "Demande-moi, je réponds en direct.": "Ask me, I answer instantly.", "sur le profil de Narimane": "about Narimane's profile", "Bonjour. Pose-moi une question sur le profil de Narimane.": "Hi! Ask me anything about Narimane's profile.", "Qu'est-ce qui te démarque ?": "What sets you apart?", "Ta stack technique ?": "Your tech stack?", "Ton rôle de Bid Manager ?": "Your Bid Manager role?", "Relais : 9 agents, 9 systèmes connectés, sous contrôle humain.": "Relais: 9 agents, 9 connected systems, under human control.", "L'interface : un sujet, l'agent fait le reste": "The interface: pick a topic, the agent does the rest", "Import et nettoyage en un clic (CSV / Excel)": "One-click import and cleaning (CSV / Excel)", "Importer la transcription (texte ou .vtt Teams)": "Import the transcript (text or Teams .vtt)", "CropHealthAI : détection de maladies (YOLOv5-Polygon)": "CropHealthAI: plant disease detection (YOLOv5-Polygon)", "contexte récupéré": "retrieved context", "Ouvrir l'assistant": "Open the assistant", "Fermer": "Close", "Masquer": "Hide", "Aperçu produit": "Product preview", "Assistant RAG sur le profil de Narimane": "RAG assistant about Narimane's profile"}, EL={"h_tag": "I design, build and <b>ship</b> AI products.", "h_lede": "From scoping and technical proposals to secure, fully traced deployment: governed agents, RAG and computer vision. <b>Engineering</b> and <b>presales</b>, both at once.", "ab_st": "I work at the exact point where a <span class=\"g\">model</span> becomes a <span class=\"g\">product</span>: design, industrialization, production rollout.", "ab_b1": "Engineer in <b>Data Science</b> and <b>Embedded Systems</b> (dual master's degree), I build generative AI systems (LLMs, RAG, agents) and full-stack applications, from POC to cloud deployment.", "w_h2": "Systems that go <span class=\"g\">all the way to production</span>.", "sk_h2": "An <span class=\"g\">end-to-end</span> stack.", "cr_h2": "<span class=\"g\">Certified</span> skills.", "rl_lead": "<b>9 AI agents</b> that take action across the company's IT systems (ITSM, directory, cloud, security), under human control. Designed and built end to end.", "xp_neu": "<div class=\"xp-sub\">Development &amp; platform</div><ul class=\"xp-ul\"><li>Designed and built, full-stack, a platform for managing innovation and R&amp;D projects, from requirements to production: Kanban board, progress tracking, deliverable uploads, annotations and comments, project catalog, role management, reporting dashboards and SSO authentication (Azure AD). <b>Stack: Next.js, React, Node.js, MongoDB, Docker.</b></li><li>Industrialization and deployment with a <b>GitOps</b> approach: CI/CD pipelines (Azure DevOps), Docker containerization, Helm chart packaging and continuous delivery with Argo CD on an AKS cluster.</li></ul><div class=\"xp-sub\">Presales &amp; project management</div><ul class=\"xp-ul\"><li>End-to-end lead on responses to <b>AI and infrastructure tenders</b>, from qualification (go/no-go) to submission of the technical proposal, on deals ranging from thousands to several million euros.</li><li>Analysis of specifications, solution scoping and coordination of contributors (technical experts, management) to build a differentiated response.</li><li>Compliance with security and data protection standards (GDPR, ISO 27001, AI Act).</li><li>R&amp;D project management: scoping, milestones and tracking.</li></ul>", "xp_kod": "<ul class=\"xp-ul\"><li><b>Direct point of contact for clients</b>: gathering requirements, presenting solutions and managing the relationship.</li><li>Needs analysis and tailored solution proposals (Data, functional, DevOps / Cloud).</li></ul>", "xp_key": "<ul class=\"xp-ul\"><li>Bridge between engineering teams and business stakeholders to align needs and solutions.</li><li>Built software solutions and R&amp;D prototypes around <b>Machine Learning</b> and <b>Deep Learning</b>.</li><li>Designed, trained and evaluated models (ML, DL).</li><li>Built interactive <b>Streamlit</b> interfaces to expose models and speed up experiment validation.</li><li>SQL querying and <b>Power BI</b> dashboards turning technical results into KPIs business teams can act on.</li><li>Technical documentation and reporting of results.</li></ul>", "ct_big": "Let's build something<br>truly <span class=\"g\">remarkable</span>."};
+  var D={"En chiffres": "By the numbers", "Masters": "Master's degrees", "Data Science & Systèmes Embarqués": "Data Science & Embedded Systems", "ans": "years", "d'expérience en conseil": "of consulting experience", "Tech et avant-vente": "Engineering & presales", "Projets IA": "AI projects", "conçus de bout en bout": "built end to end", "Voir le détail": "Show details", "Masquer le détail": "Hide details", "Copier l'email": "Copy email", "Email copié ✓": "Email copied ✓", "Développement full-stack d'une plateforme de gestion de projets R&D (Next.js, GitOps sur AKS) et pilotage des réponses aux appels d'offres IA et infrastructure.": "Full-stack development of an R&D project management platform (Next.js, GitOps on AKS) and lead on AI and infrastructure tender responses.", "Interlocutrice directe des clients : recueil du besoin et proposition de solutions Data, DevOps et Cloud.": "Direct point of contact for clients: gathering needs and proposing Data, DevOps and Cloud solutions.", "Prototypes R&D en Machine Learning et Deep Learning, interfaces Streamlit et tableaux de bord Power BI pour les équipes métier.": "Machine learning and deep learning R&D prototypes, Streamlit interfaces and Power BI dashboards for business teams.", "Détection de maladies des plantes par segmentation YOLOv5, de l'annotation au déploiement d'une application de diagnostic.": "Plant disease detection with YOLOv5 segmentation, from annotation to a deployed diagnostic app.","profil": "profile", "projets": "projects", "CV ↓": "Resume ↓", "Forward Deployed Engineer, IA générative, Agents & Data Science": "Forward Deployed Engineer, Generative AI, Agents & Data Science", "Agents IA": "AI Agents", "Voir mes produits": "See my products", "Me contacter": "Get in touch", "Ouverte aux opportunités en CDI": "Open to full-time roles", "défiler": "scroll", "Ce que je construis": "What I build", "Des produits d'IA réels, de l'idée à la production.": "Real AI products, from idea to production.", "Agent de veille": "Tech-watch agent", "Synthèse de réunions": "Meeting summaries", "Agents IA gouvernés pour la DSI": "Governed AI agents for IT departments", "Analyse & nettoyage de données, 100% navigateur": "Data analysis & cleaning, 100% in-browser", "Observabilité & FinOps GPU en temps réel": "Real-time GPU observability & FinOps", "RAG + arXiv → note de veille sourcée": "RAG + arXiv → sourced research brief", "Transcription → compte-rendu actionnable": "Transcript → actionable minutes", "Détection de maladies (YOLOv5-Polygon)": "Plant disease detection (YOLOv5-Polygon)", "Voir le produit →": "View product →", "Voir le produit": "View product", "Profil": "Profile", "Mon parcours en avant-vente m'a appris à traduire un besoin métier en solution technique crédible, et à dialoguer autant avec les équipes techniques qu'avec les clients.": "My presales background taught me to turn a business need into a credible technical solution, and to talk as easily with engineering teams as with clients.", "Rôle": "Role", "Basée à": "Based in", "Ingénierie": "Engineering", "Langues": "Languages", "Projets": "Projects", "Une sélection en IA générative, agents et data science, avec des démos publiques et du code ouvert.": "A selection of generative AI, agent and data science work, with public demos and open-source code.", "PROJET PHARE, PLATEFORME MULTI-AGENTS": "FLAGSHIP PROJECT, MULTI-AGENT PLATFORM", "OBSERVABILITÉ, FINOPS, LLM": "OBSERVABILITY, FINOPS, LLM", "DATA + AGENT IA AUTONOME": "DATA + AUTONOMOUS AI AGENT", "AGENT IA, DÉPLOYÉ": "AI AGENT, DEPLOYED", "AGENT IA, TYPESCRIPT": "AI AGENT, TYPESCRIPT", "python, aws serverless, multi-agents, gouvernance": "python, aws serverless, multi-agent, governance", "react, duckdb-wasm, fastapi, agent autonome": "react, duckdb-wasm, fastapi, autonomous agent", "typescript, mistral, agent ia": "typescript, mistral, ai agent", "recherche, deep learning": "research, deep learning", "Relais, plateforme d'agents IA pour la DSI": "Relais, an AI agent platform for IT departments", "GPU Watch, surveillance GPU en temps réel": "GPU Watch, real-time GPU monitoring", "Datalyst, analyse de données augmentée par IA": "Datalyst, AI-augmented data analysis", "Agent IA de veille technologique": "AI tech-watch agent", "Agent de synthèse de réunions": "Meeting summary agent", "Détection de maladies des plantes": "Plant disease detection", "Validation humaine des actions sensibles": "Human approval for sensitive actions", "Garde-fou anti-injection + arrêt d'urgence": "Anti-injection guardrail + kill switch", "Chaque décision tracée et rejouable": "Every decision traced and replayable", "Surveille un GPU en temps réel et chiffre l'argent gaspillé.": "Monitors a GPU in real time and puts a number on wasted spend.", "Métriques toutes les 5 s, alertes surchauffe / inactivité": "Metrics every 5 s, overheating / idle alerts", "Coût et économies possibles calculés en direct": "Live cost and potential savings", "Rapport FinOps rédigé par un LLM open source": "FinOps report written by an open-source LLM", "Analyse de données dans le navigateur, avec un agent IA qui explore à ta place.": "In-browser data analysis, with an AI agent that explores the data for you.", "Text-to-SQL auto-corrigé": "Self-correcting text-to-SQL", "Agent autonome qui enchaîne ses propres requêtes": "Autonomous agent that chains its own queries", "Données 100 % locales, SQL de l'IA validé en lecture seule": "Data stays 100% local, AI-generated SQL validated as read-only", "Démo à venir": "Demo coming soon", "Aperçu du produit": "Product preview", "Aperçu du projet": "Project preview", "Un agent autonome qui transforme l'état de l'art en une note de veille sourcée.": "An autonomous agent that turns the state of the art into a sourced research brief.", "Recherche web + arXiv": "Web + arXiv search", "Robuste : garde-temps et bascule de modèle": "Robust: timeouts and model fallback", "Déployé en ligne sur Hugging Face": "Deployed online on Hugging Face", "Démo": "Demo", "Transforme une transcription Teams en décisions et actions qui / quoi / quand.": "Turns a Teams transcript into decisions and who / what / when action items.", "Chaque élément relié à sa citation source": "Every item linked to its source quote", "Sorties du LLM validées par schéma": "Schema-validated LLM outputs", "Export .ics, Word, Markdown, email": "Export to .ics, Word, Markdown, email", "Détecte les maladies des plantes à partir d'une photo. Projet de recherche.": "Detects plant diseases from a photo. Research project.", "Segmentation YOLOv5, de l'annotation à l'évaluation": "YOLOv5 segmentation, from annotation to evaluation", "Mesuré en précision, rappel et F1": "Measured on precision, recall and F1", "Déployé dans une application web": "Deployed in a web app", "IA générative & Data Science": "Generative AI & Data Science", "Développement": "Development", "Data & Pilotage": "Data & Delivery", "Dossiers CIR": "CIR R&D tax credit filings", "Avant-vente, RFP": "Presales, RFP", "Des acquis validés par les acteurs qui font le secteur : IA, deep learning et cloud.": "Skills validated by the companies that shape the field: AI, deep learning and cloud.", "vérifié": "verified", "voir ↗": "view ↗", "Parcours": "Experience", "Trajectoire.": "Career path.", "Janv. 2026 → Présent": "Jan 2026 → Present", "Oct. 2024 → Sep. 2025": "Oct 2024 → Sep 2025", "Juin 2023 → Oct. 2024": "Jun 2023 → Oct 2024", "Ingénieure IA & Développement / Bid Manager": "AI & Software Engineer / Bid Manager", "Ingénieure d'Affaires IT": "IT Business Engineer", "Neurones IT, Paris, alternance": "Neurones IT, Paris, work-study", "KeyBox, CDI": "KeyBox, full-time", "Laboratoire LISIC": "LISIC Laboratory", "Avant-vente": "Presales", "AO": "Tenders", "CDC": "Specs", "Projet de recherche en vision par ordinateur : détection de maladies des plantes par segmentation (YOLOv5), de l'annotation et l'entraînement à l'évaluation (précision, rappel, F1) jusqu'au déploiement d'une application de diagnostic (Streamlit).": "Computer vision research project: plant disease detection through segmentation (YOLOv5), from annotation and training to evaluation (precision, recall, F1) and deployment of a diagnostic app (Streamlit).", "Disponible pour des opportunités en CDI (IA, Data Science, AIOps, Bid Manager), en Île-de-France et à distance.": "Available for full-time roles (AI, Data Science, AIOps, Bid Manager), in the Paris area or remote.", "Télécharger le CV": "Download resume (FR)", "retour en haut ↑": "back to top ↑", "Assistant IA": "AI Assistant", "Une question sur mon profil ?": "Any question about my profile?", "Demande-moi, je réponds en direct.": "Ask me, I answer instantly.", "sur le profil de Narimane": "about Narimane's profile", "Bonjour. Pose-moi une question sur le profil de Narimane.": "Hi! Ask me anything about Narimane's profile.", "Qu'est-ce qui te démarque ?": "What sets you apart?", "Ta stack technique ?": "Your tech stack?", "Ton rôle de Bid Manager ?": "Your Bid Manager role?", "Relais : 9 agents, 9 systèmes connectés, sous contrôle humain.": "Relais: 9 agents, 9 connected systems, under human control.", "L'interface : un sujet, l'agent fait le reste": "The interface: pick a topic, the agent does the rest", "Import et nettoyage en un clic (CSV / Excel)": "One-click import and cleaning (CSV / Excel)", "Importer la transcription (texte ou .vtt Teams)": "Import the transcript (text or Teams .vtt)", "CropHealthAI : détection de maladies (YOLOv5-Polygon)": "CropHealthAI: plant disease detection (YOLOv5-Polygon)", "contexte récupéré": "retrieved context", "Ouvrir l'assistant": "Open the assistant", "Fermer": "Close", "Masquer": "Hide", "Aperçu produit": "Product preview", "Assistant RAG sur le profil de Narimane": "RAG assistant about Narimane's profile"}, EL={"h_tag": "I design, build and <b>ship</b> AI products.", "h_lede": "From scoping and technical proposals to secure, fully traced deployment: governed agents, RAG and computer vision. <b>Engineering</b> and <b>presales</b>, both at once.", "ab_st": "I work at the exact point where a <span class=\"g\">model</span> becomes a <span class=\"g\">product</span>: design, industrialization, production rollout.", "ab_b1": "Engineer in <b>Data Science</b> and <b>Embedded Systems</b> (dual master's degree), I build generative AI systems (LLMs, RAG, agents) and full-stack applications, from POC to cloud deployment.", "w_h2": "Systems that go <span class=\"g\">all the way to production</span>.", "sk_h2": "An <span class=\"g\">end-to-end</span> stack.", "cr_h2": "<span class=\"g\">Certified</span> skills.", "rl_lead": "<b>9 AI agents</b> that take action across the company's IT systems (ITSM, directory, cloud, security), under human control. Designed and built end to end.", "xp_neu": "<div class=\"xp-sub\">Development &amp; platform</div><ul class=\"xp-ul\"><li>Designed and built, full-stack, a platform for managing innovation and R&amp;D projects, from requirements to production: Kanban board, progress tracking, deliverable uploads, annotations and comments, project catalog, role management, reporting dashboards and SSO authentication (Azure AD). <b>Stack: Next.js, React, Node.js, MongoDB, Docker.</b></li><li>Industrialization and deployment with a <b>GitOps</b> approach: CI/CD pipelines (Azure DevOps), Docker containerization, Helm chart packaging and continuous delivery with Argo CD on an AKS cluster.</li></ul><div class=\"xp-sub\">Presales &amp; project management</div><ul class=\"xp-ul\"><li>End-to-end lead on responses to <b>AI and infrastructure tenders</b>, from qualification (go/no-go) to submission of the technical proposal, on deals ranging from thousands to several million euros.</li><li>Analysis of specifications, solution scoping and coordination of contributors (technical experts, management) to build a differentiated response.</li><li>Compliance with security and data protection standards (GDPR, ISO 27001, AI Act).</li><li>R&amp;D project management: scoping, milestones and tracking.</li></ul>", "xp_kod": "<ul class=\"xp-ul\"><li><b>Direct point of contact for clients</b>: gathering requirements, presenting solutions and managing the relationship.</li><li>Needs analysis and tailored solution proposals (Data, functional, DevOps / Cloud).</li></ul>", "xp_key": "<ul class=\"xp-ul\"><li>Bridge between engineering teams and business stakeholders to align needs and solutions.</li><li>Built software solutions and R&amp;D prototypes around <b>Machine Learning</b> and <b>Deep Learning</b>.</li><li>Designed, trained and evaluated models (ML, DL).</li><li>Built interactive <b>Streamlit</b> interfaces to expose models and speed up experiment validation.</li><li>SQL querying and <b>Power BI</b> dashboards turning technical results into KPIs business teams can act on.</li><li>Technical documentation and reporting of results.</li></ul>", "ct_big": "Let's build something<br>truly <span class=\"g\">remarkable</span>."};
   function key(s){ return String(s).replace(/\s+/g,' ').trim(); }
   var lang='fr';
   try{ var q=new URLSearchParams(location.search).get('lang'); if(q==='fr'||q==='en') lang=q; else { var s=localStorage.getItem('lang'); if(s==='fr'||s==='en') lang=s; else { var nl=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||'fr']); lang=nl.some(function(l){ return /^fr/i.test(l); })?'fr':'en'; } } }catch(e){}
@@ -446,6 +447,45 @@
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
 })();
 </script>
+<style>
+/* chiffres cles */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.kpi{position:relative;display:block;overflow:hidden;padding:26px 24px 24px;border:1px solid var(--line);border-radius:18px;
+  background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));transition:border-color .3s,transform .3s,box-shadow .3s}
+.kpi::before{content:"";position:absolute;inset:-40% -20% auto auto;width:180px;height:180px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,77,157,.16),transparent 70%);opacity:0;transition:opacity .4s}
+.kpi:hover{border-color:rgba(255,77,157,.45);transform:translateY(-3px);box-shadow:0 26px 60px -30px rgba(255,77,157,.45)}
+.kpi:hover::before{opacity:1}
+.kv{display:flex;align-items:baseline;gap:8px;font-family:var(--disp);font-weight:800;line-height:1;letter-spacing:-.03em}
+.kn{font-size:clamp(46px,5vw,64px);font-variant-numeric:tabular-nums;
+  background:linear-gradient(100deg,var(--cyan),var(--azure),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ku{font-size:20px;color:var(--ink)}
+.kl{margin-top:14px;font-weight:600;font-size:15px;color:var(--ink)}
+.ks{margin-top:4px;font-size:13px;color:var(--muted);line-height:1.45}
+.kbar{position:absolute;left:0;bottom:0;height:2px;width:100%;transform:scaleX(0);transform-origin:left;
+  background:linear-gradient(90deg,var(--violet),var(--cyan),var(--azure));transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.kpis.on .kbar{transform:scaleX(1)}
+.kpis.on .kpi:nth-child(2) .kbar{transition-delay:.12s}.kpis.on .kpi:nth-child(3) .kbar{transition-delay:.24s}.kpis.on .kpi:nth-child(4) .kbar{transition-delay:.36s}
+@media(max-width:860px){.kpis{grid-template-columns:repeat(2,1fr);gap:12px}.kpi{padding:20px 18px}}
+/* parcours repliable */
+.ti .xp-desc{overflow:hidden;max-height:0;opacity:0;margin-top:0;transition:max-height .5s cubic-bezier(.2,.8,.2,1),opacity .35s ease,margin-top .35s ease}
+.ti.open .xp-desc{opacity:1;margin-top:16px}
+.ti .xp-sum{max-width:74ch}
+.xp-more{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:6px 13px;border:1px solid var(--line-2);border-radius:999px;
+  background:rgba(255,255,255,.03);color:var(--ink);font-family:var(--mono);font-size:11.5px;letter-spacing:.03em;cursor:pointer;transition:border-color .25s,background .25s}
+.xp-more:hover{border-color:var(--cyan);background:rgba(255,77,157,.07)}
+.xp-more:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.xp-more i{font-style:normal;transition:transform .3s}
+.ti.open .xp-more i{transform:rotate(180deg)}
+.xp-more .xm-c,.ti.open .xp-more .xm-o{display:none}
+.ti.open .xp-more .xm-c{display:inline}
+/* copier l'email */
+button.btn{background:none;font-family:var(--mono)}
+#copyMail .cm-b{display:none}
+#copyMail.copied{border-color:#3DDC97;color:#3DDC97}
+#copyMail.copied .cm-a{display:none}
+#copyMail.copied .cm-b{display:inline}
+</style>
 </head>
 <body id="top">
 <div id="prog"></div>
@@ -479,7 +519,7 @@
     <p class="lede" data-hero data-i18n="h_lede">Du cadrage et du mémoire technique au déploiement sécurisé et tracé : agents gouvernés, RAG et computer vision. <b>Technique</b> et <b>avant-vente</b>, les deux à la fois.</p>
     <div class="hero-domains" data-hero><span>Agents IA</span><span>RAG</span><span>Computer Vision</span><span>Data &amp; FinOps</span><span>AIOps</span></div>
     <div class="cta-row" data-hero>
-      <a href="#products" class="btn btn-primary magnetic">Voir mes produits
+      <a href="#work" class="btn btn-primary magnetic">Voir mes produits
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a href="#contact" class="btn btn-ghost magnetic">Me contacter</a>
     </div>
@@ -524,23 +564,12 @@
 </style>
 <section class="proofband" id="products">
   <div class="wrap">
-    <div class="pb-head"><span class="eyebrow">Ce que je construis</span><h2>Des produits d'IA réels, de l'idée à la production.</h2></div>
-    <div class="showcase">
-      <div class="sc-list">
-        <button class="sc-item active" data-proj="relais"><span class="sc-top"><span class="sc-n">Relais</span></span><span class="sc-d">Agents IA gouvernés pour la DSI</span></button>
-        <button class="sc-item" data-proj="datalyst"><span class="sc-top"><span class="sc-n">Datalyst</span></span><span class="sc-d">Analyse &amp; nettoyage de données, 100% navigateur</span></button>
-        <button class="sc-item" data-proj="gpu"><span class="sc-top"><span class="sc-n">GPU Watch</span></span><span class="sc-d">Observabilité &amp; FinOps GPU en temps réel</span></button>
-        <button class="sc-item" data-proj="veille"><span class="sc-top"><span class="sc-n">Agent de veille</span></span><span class="sc-d">RAG + arXiv → note de veille sourcée</span></button>
-        <button class="sc-item" data-proj="reunions"><span class="sc-top"><span class="sc-n">Synthèse de réunions</span></span><span class="sc-d">Transcription → compte-rendu actionnable</span></button>
-        <button class="sc-item" data-proj="plantes"><span class="sc-top"><span class="sc-n">CropHealthAI</span></span><span class="sc-d">Détection de maladies (YOLOv5-Polygon)</span></button>
-      </div>
-      <div class="sc-stage">
-        <div class="sc-bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i></div>
-        <div class="sc-frame">
-          <img class="sc-img" alt="Aperçu produit">
-          <div class="sc-cap"><div><b class="sc-cap-n">Relais</b><span class="sc-cap-d">Agents IA gouvernés pour la DSI</span></div><button class="sc-open">Voir le produit →</button></div>
-        </div>
-      </div>
+    <div class="pb-head"><span class="eyebrow">En chiffres</span><h2>Des produits d'IA réels, de l'idée à la production.</h2></div>
+    <div class="kpis">
+      <a class="kpi" href="#path"><div class="kv"><span class="kn" data-to="2">2</span></div><div class="kl">Masters</div><div class="ks">Data Science &amp; Systèmes Embarqués</div><i class="kbar"></i></a>
+      <a class="kpi" href="#path"><div class="kv"><span class="kn" data-to="3">3</span><span class="ku">ans</span></div><div class="kl">d'expérience en conseil</div><div class="ks">Tech et avant-vente</div><i class="kbar"></i></a>
+      <a class="kpi" href="#creds"><div class="kv"><span class="kn" data-to="6">6</span></div><div class="kl">Certifications</div><div class="ks">NVIDIA, Huawei, Microsoft…</div><i class="kbar"></i></a>
+      <a class="kpi" href="#work"><div class="kv"><span class="kn" data-to="6">6</span></div><div class="kl">Projets IA</div><div class="ks">conçus de bout en bout</div><i class="kbar"></i></a>
     </div>
   </div>
 </section>
@@ -737,20 +766,20 @@
 #creds .ct-cmd{color:#AEB4C6;margin-bottom:12px}
 #creds .ct-cmd .ct-pr{color:#5B6BFF;margin-right:9px}
 #creds .ct-lines{display:flex;flex-direction:column;gap:3px}
-#creds .ct-line{display:grid;grid-template-columns:22px 160px 1fr auto auto;align-items:center;gap:14px;padding:6px 9px;border-radius:9px;opacity:0;transform:translateY(5px);transition:opacity .3s,transform .3s,background .18s}
+#creds .ct-line{display:grid;grid-template-columns:22px 160px 1fr auto auto;align-items:center;gap:14px;padding:6px 9px;border-radius:9px;transition:background .18s}
 #creds .ct-line.show{opacity:1;transform:none}
-#creds .ct-chk{width:18px;height:18px;border-radius:5px;border:1px solid #2a3042;display:grid;place-items:center;color:#0a0d16;font-size:11px;font-weight:700;background:transparent;transition:.25s}
-#creds .ct-line.ok .ct-chk{background:#3ED598;border-color:#3ED598}
-#creds .ct-line.ok .ct-chk::after{content:'\2713'}
+#creds .ct-chk{width:18px;height:18px;border-radius:5px;border:1px solid #2a3042;display:grid;place-items:center;color:#0a0d16;font-size:11px;font-weight:700;background:transparent}
+#creds .ct-line .ct-chk{background:#3ED598;border-color:#3ED598}
+#creds .ct-line .ct-chk::after{content:'\2713'}
 #creds .ct-iss{color:#7FA7FF;text-transform:uppercase;font-size:10.5px;letter-spacing:.04em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #creds .ct-nm{color:#EDEDF5;font-size:12.5px}
-#creds .ct-ok{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#3ED598;opacity:0;transition:opacity .35s}
+#creds .ct-ok{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#3ED598}
 #creds .ct-line.ok .ct-ok{opacity:1}
-#creds .ct-see{font-size:10.5px;color:#AEB4C6;opacity:0;white-space:nowrap;transition:opacity .2s,color .2s}
+#creds .ct-see{font-size:10.5px;color:#AEB4C6;opacity:0;white-space:nowrap;transition:opacity .2s,color .2s;min-width:52px;text-align:right}
 #creds .ct-line[data-cert]{cursor:pointer}
 #creds .ct-line[data-cert]:hover{background:rgba(91,107,255,.12)}
 #creds .ct-line[data-cert]:hover .ct-see{opacity:1;color:#fff}
-#creds .ct-sum{margin-top:15px;color:#3ED598;opacity:0;transition:opacity .45s}
+#creds .ct-sum{margin-top:15px;color:#3ED598}
 #creds .ct-sum.show{opacity:1}
 #creds .ct-sum .ct-pr{color:#5B6BFF;margin-right:9px}
 .mk-body img.cert{border-radius:10px}
@@ -762,7 +791,7 @@
   #creds .ct-see{display:none}
 }
 </style>
-<div class="certterm rv">
+<div class="certterm">
       <div class="ct-bar"><span class="ct-dots"><i></i><i></i><i></i></span><span class="ct-ttl">narimane@portfolio   ~/certifications</span></div>
       <div class="ct-body" id="certTerm">
         <div class="ct-cmd"><span class="ct-pr">$</span>verify --all ./certifications</div>
@@ -794,6 +823,8 @@
         <h3>Ingénieure IA &amp; Développement / Bid Manager</h3>
         <div class="org">Neurones IT, Paris, alternance</div>
         <div class="tags"><span>Next.js</span><span>React</span><span>Node.js</span><span>MongoDB</span><span>Docker</span><span>Azure DevOps</span><span>Helm</span><span>Argo CD</span><span>AKS</span><span>RFP</span><span>AO</span><span>CDC</span></div>
+        <p class="xp-sum">Développement full-stack d'une plateforme de gestion de projets R&amp;D (Next.js, GitOps sur AKS) et pilotage des réponses aux appels d'offres IA et infrastructure.</p>
+        <button type="button" class="xp-more" aria-expanded="false"><span class="xm-o">Voir le détail</span><span class="xm-c">Masquer le détail</span><i aria-hidden="true">↓</i></button>
         <div class="xp-desc" data-i18n="xp_neu"><div class="xp-sub">Développement &amp; plateforme</div><ul class="xp-ul"><li>Conception et développement full-stack d'une plateforme de gestion de projets innovants et R&amp;D, du cadrage du besoin jusqu'à la mise en production : tableau Kanban, suivi d'avancement, dépôt des livrables, annotations et commentaires, catalogue de projets, gestion des rôles, tableaux de bord de reporting et authentification SSO (Azure AD). <b>Stack : Next.js, React, Node.js, MongoDB, Docker.</b></li><li>Industrialisation et déploiement en approche <b>GitOps</b> : pipelines CI/CD (Azure DevOps), conteneurisation Docker, packaging via charts Helm et livraison continue avec Argo CD sur un cluster AKS.</li></ul><div class="xp-sub">Avant-vente &amp; gestion de projet</div><ul class="xp-ul"><li>Pilotage de bout en bout des réponses aux <b>appels d'offres IA et Infrastructure</b>, de la qualification (go/no-go) à la remise du mémoire technique, sur des projets de plusieurs milliers à plusieurs millions d'euros.</li><li>Analyse du cahier des charges, cadrage de la solution et coordination des contributeurs (experts techniques, direction) pour construire une réponse différenciante.</li><li>Conformité aux normes de sécurité et de protection des données (RGPD, ISO 27001, AI Act).</li><li>Gestion de projets R&amp;D : cadrage, jalons et suivi.</li></ul></div>
       </div>
       <div class="ti">
@@ -801,6 +832,8 @@
         <h3>Ingénieure d'Affaires IT</h3>
         <div class="org">Kodemade, Montrouge, Freelance</div>
         <div class="tags"><span>Avant-vente</span><span>Data</span><span>DevOps</span><span>Cloud</span></div>
+        <p class="xp-sum">Interlocutrice directe des clients : recueil du besoin et proposition de solutions Data, DevOps et Cloud.</p>
+        <button type="button" class="xp-more" aria-expanded="false"><span class="xm-o">Voir le détail</span><span class="xm-c">Masquer le détail</span><i aria-hidden="true">↓</i></button>
         <div class="xp-desc" data-i18n="xp_kod"><ul class="xp-ul"><li><b>Interlocutrice directe des clients</b> : recueil du besoin, présentation des solutions et suivi de la relation.</li><li>Analyse des besoins et proposition de solutions adaptées (Data, fonctionnel, DevOps / Cloud).</li></ul></div>
       </div>
       <div class="ti">
@@ -808,6 +841,8 @@
         <h3>Software Engineer</h3>
         <div class="org">KeyBox, CDI</div>
         <div class="tags"><span>Python</span><span>Machine Learning</span><span>Deep Learning</span><span>PyTorch</span><span>Streamlit</span><span>SQL</span><span>Power BI</span></div>
+        <p class="xp-sum">Prototypes R&amp;D en Machine Learning et Deep Learning, interfaces Streamlit et tableaux de bord Power BI pour les équipes métier.</p>
+        <button type="button" class="xp-more" aria-expanded="false"><span class="xm-o">Voir le détail</span><span class="xm-c">Masquer le détail</span><i aria-hidden="true">↓</i></button>
         <div class="xp-desc" data-i18n="xp_key"><ul class="xp-ul"><li>Interface entre les équipes techniques et les parties prenantes métier pour aligner besoins et solutions.</li><li>Développement de solutions logicielles et de prototypes R&amp;D autour du <b>Machine Learning</b> et du <b>Deep Learning</b>.</li><li>Conception, entraînement et évaluation de modèles (ML, DL).</li><li>Développement d'interfaces interactives avec <b>Streamlit</b> pour exposer les modèles et faciliter la validation des expérimentations.</li><li>Requêtage SQL et conception de tableaux de bord <b>Power BI</b> transformant les résultats techniques en indicateurs exploitables par les équipes métier.</li><li>Documentation technique et restitution des résultats.</li></ul></div>
       </div>
       <div class="ti">
@@ -815,6 +850,8 @@
         <h3>Data Scientist</h3>
         <div class="org">Laboratoire LISIC</div>
         <div class="tags"><span>Python</span><span>PyTorch</span><span>YOLOv5</span><span>Computer Vision</span><span>Streamlit</span></div>
+        <p class="xp-sum">Détection de maladies des plantes par segmentation YOLOv5, de l'annotation au déploiement d'une application de diagnostic.</p>
+        <button type="button" class="xp-more" aria-expanded="false"><span class="xm-o">Voir le détail</span><span class="xm-c">Masquer le détail</span><i aria-hidden="true">↓</i></button>
         <p class="xp-desc">Projet de recherche en vision par ordinateur : détection de maladies des plantes par segmentation (YOLOv5), de l'annotation et l'entraînement à l'évaluation (précision, rappel, F1) jusqu'au déploiement d'une application de diagnostic (Streamlit).</p>
       </div>
     </div>
@@ -832,6 +869,7 @@
       <a class="btn btn-primary magnetic" href="mailto:narimanekhl@gmail.com">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
         narimanekhl@gmail.com</a>
+      <button type="button" class="btn btn-ghost magnetic" id="copyMail" data-mail="narimanekhl@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span class="cm-a">Copier l'email</span><span class="cm-b">Email copié ✓</span></button>
       <a class="btn btn-ghost dl-cv" href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 11l5 5 5-5M5 21h14"/></svg>Télécharger le CV</a>
       <a class="btn btn-ghost magnetic" href="https://linkedin.com/in/Narimane-kahli" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zM8.34 18H5.67V9.75h2.67V18zM7 8.57a1.55 1.55 0 110-3.1 1.55 1.55 0 010 3.1zM18.34 18h-2.67v-4.02c0-.96-.02-2.2-1.34-2.2-1.34 0-1.55 1.05-1.55 2.13V18h-2.67V9.75h2.56v1.13h.04c.36-.68 1.23-1.4 2.53-1.4 2.7 0 3.2 1.78 3.2 4.09V18z"/></svg>
@@ -951,9 +989,8 @@
   var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var DPR=Math.min(devicePixelRatio||1,2), W=0,H=0, mobile=false, zx0=0,zy0=0,zy1=0;
 
-  var WORDS=["LLM","RAG","Agents IA","NLP","Computer Vision","Diffusion","Deep Learning",
-             "Machine Learning","Python","PyTorch","TensorFlow","Hugging Face","AIOps",
-             "Embeddings","Prompt Engineering","GenAI"];
+  var WORDS=["LLM","RAG","Agents IA","NLP","Computer Vision","Deep Learning",
+             "Machine Learning","Python","PyTorch","AIOps","Embeddings","Prompt Engineering"];
   var NEI={
     "RAG":["Embeddings","LLM","Agents IA"], "Agents IA":["LLM","RAG"],
     "LLM":["GenAI","Agents IA","RAG","Prompt Engineering"],
@@ -980,7 +1017,7 @@
     {k:'relais',n:'Relais',en:'Relais',uses:['Agents IA','LLM','RAG','Python']},
     {k:'datalyst',n:'Datalyst',en:'Datalyst',uses:['LLM','Agents IA','Prompt Engineering','Python']},
     {k:'gpu',n:'GPU Watch',en:'GPU Watch',uses:['AIOps','LLM','Python']},
-    {k:'veille',n:'Agent de veille',en:'Tech-watch agent',uses:['RAG','Agents IA','Hugging Face','Embeddings']},
+    {k:'veille',n:'Agent de veille',en:'Tech-watch agent',uses:['RAG','Agents IA','Embeddings','LLM']},
     {k:'reunions',n:'Agent réunions',en:'Meeting agent',uses:['LLM','NLP','Prompt Engineering']},
     {k:'plantes',n:'CropHealthAI',en:'CropHealthAI',uses:['Computer Vision','Deep Learning','PyTorch']}
   ];
@@ -1068,48 +1105,48 @@
     cv.width=W*DPR;cv.height=H*DPR;cv.style.width=W+'px';cv.style.height=H+'px';ctx.setTransform(DPR,0,0,DPR,0,0);
     mobile = W<960; cloud.style.display = mobile ? 'none' : 'block';
     if(mobile) return;
-    var x0=W*0.48, x1=W*0.965, y0=H*0.11, y1=H*0.73;
+    var x0=W*0.5, x1=W*0.965, y0=H*0.15, y1=H*0.72;
+    // le nuage commence apres le texte du hero ; s'il ne reste pas assez de place, il est masque
+    var hl=hero.getBoundingClientRect().left, tr=0;
+    hero.querySelectorAll('.hero-inner .eyebrow,.hero-inner h1,.hero-inner .lede').forEach(function(e){ var tw=document.createTreeWalker(e,NodeFilter.SHOW_TEXT), tn; while((tn=tw.nextNode())){ if(!/\S/.test(tn.nodeValue)) continue; var rg=document.createRange(); rg.selectNodeContents(tn); [].forEach.call(rg.getClientRects(),function(rr){ if(rr.width) tr=Math.max(tr,rr.right-hl); }); } });
+    x0=Math.max(x0,tr+40);
+    if(x1-x0<440){ mobile=true; cloud.style.display='none'; return; }
     zx0=x0; zy0=y0; zy1=y1;
     // zone reservee au cadre RAG : les noeuds la contournent
     RES=null;
     if(card){ var cr=card.getBoundingClientRect(), hr=hero.getBoundingClientRect();
       var rx=cr.left-hr.left, ry=cr.top-hr.top;
       RES={x0:rx-24, y0:ry-44, x1:rx+cr.width+24, y1:ry+cr.height+60}; }
-    // repartition equilibree : grille jitteree ordonnee par l'espace latent, puis anti-chevauchement
-    nodes.forEach(function(n){ if(!n.lw){ n.lw=(n.el?n.el.offsetWidth:0)||64; } n.bw=n.lw+40; n.bh=28; });
-    var N=nodes.length, COLS=3, ROWS=Math.ceil(N/COLS);
-    var ordered=nodes.slice().sort(function(a,b){ return (a.ey-b.ey)||(a.ex-b.ex); });
-    var cw=(x1-x0)/COLS, ch=(y1-y0)*0.8/ROWS;
-    ordered.forEach(function(n,i){ var r=Math.floor(i/COLS), c=i%COLS; if(r%2===1) c=COLS-1-c;
-      n.obx=x0+(c+0.5)*cw+(Math.random()-0.5)*cw*0.3;
-      n.oby=y0+(r+0.5)*ch+(Math.random()-0.5)*ch*0.3;
-    });
-    function clampAll(){ for(var k=0;k<nodes.length;k++){ var nn=nodes[k];
-      nn.obx=Math.max(x0+12,Math.min(x1-12,nn.obx)); nn.oby=Math.max(y0+8,Math.min(y1-8,nn.oby)); } }
-    for(var it=0; it<240; it++){
-      for(var i=0;i<nodes.length;i++){ for(var j=i+1;j<nodes.length;j++){
-        var A=nodes[i],B=nodes[j]; var dx=B.obx-A.obx, dy=B.oby-A.oby;
-        var ox=(A.bw+B.bw)/2-Math.abs(dx), oy=(A.bh+B.bh)/2-Math.abs(dy);
-        if(ox>0 && oy>0){ if(ox<oy){ var sx=(dx<0?-1:1)*ox*0.34; A.obx-=sx; B.obx+=sx; } else { var sy=(dy<0?-1:1)*oy*0.5; A.oby-=sy; B.oby+=sy; } }
+    // projets : colonne alignee a droite ; competences : positions de l'espace latent, espacees
+    nodes.forEach(function(n){ if(!n.lw){ n.lw=(n.el?n.el.offsetWidth:0)||64; } });
+    var PR=nodes.filter(function(n){return n.p;}), SK=nodes.filter(function(n){return !n.p;});
+    var pmax=0; PR.forEach(function(n){ pmax=Math.max(pmax,n.lw); });
+    var px=x1-pmax-22, pstep=(y1-y0)/PR.length;
+    PR.forEach(function(n,i){ n.obx=px; n.oby=y0+(i+0.5)*pstep; });
+    var sx0=x0+6, sx1=px-64, sy0=y0+14, sy1=y1-14;
+    // repartition reguliere qui garde l'ordre de l'espace latent : une ligne par concept, colonnes melangees rang/position
+    var byY=SK.slice().sort(function(a,b){return a.ey-b.ey;}), byX=SK.slice().sort(function(a,b){return a.ex-b.ex;}), NK=SK.length-1||1;
+    byY.forEach(function(n,i){ n._ry=i/NK; }); byX.forEach(function(n,i){ n._rx=i/NK; });
+    SK.forEach(function(n){ var fx=0.45*n.ex+0.55*n._rx; n.obx=sx0+fx*Math.max(0,sx1-n.lw-sx0); n.oby=sy0+n._ry*(sy1-sy0); });
+    function clampSk(n){ n.obx=Math.max(sx0,Math.min(sx1-n.lw,n.obx)); n.oby=Math.max(sy0,Math.min(sy1,n.oby)); }
+    var PADX=34, PADY=36;
+    for(var it=0; it<400; it++){ var moved=false;
+      for(var i=0;i<SK.length;i++){ for(var j=i+1;j<SK.length;j++){
+        var A=SK[i],B=SK[j];
+        var ax=A.obx+A.lw/2, bx=B.obx+B.lw/2;
+        var ox=(A.lw+B.lw)/2+PADX-Math.abs(bx-ax), oy=PADY-Math.abs(B.oby-A.oby);
+        if(ox>0&&oy>0){ moved=true;
+          if(ox*0.6<oy){ var s=(bx<ax?-1:1)*ox*0.26; A.obx-=s; B.obx+=s; }
+          else { var s2=(B.oby<A.oby?-1:1)*oy*0.5; A.oby-=s2; B.oby+=s2; } }
       }}
-      clampAll();
-    }
-    // resolution finale : separe verticalement (change de ligne) toute paire encore en collision
-    for(var it2=0; it2<140; it2++){ var any=false;
-      for(var i=0;i<nodes.length;i++){ for(var j=i+1;j<nodes.length;j++){
-        var A=nodes[i],B=nodes[j];
-        var ox=(A.bw+B.bw)/2-Math.abs(B.obx-A.obx), oy=(A.bh+B.bh)/2-Math.abs(B.oby-A.oby);
-        if(ox>0 && oy>0){ any=true; var pu=(oy/2+3);
-          if(A.oby<=B.oby){ A.oby-=pu; B.oby+=pu; } else { A.oby+=pu; B.oby-=pu; }
-        }
-      }}
-      clampAll(); if(!any) break;
+      SK.forEach(clampSk); if(!moved) break;
     }
     nodes.forEach(function(n){ n.rbx=n.obx; n.rby=n.oby; if(n.cbx==null){ n.bx=n.obx; n.by=n.oby; } });
   }
   layout(); addEventListener('resize',layout);
+  if(document.fonts&&document.fonts.ready) document.fonts.ready.then(function(){ nodes.forEach(function(n){ n.lw=0; }); layout(); });
 
-  var RAD=230, t0=performance.now();
+  var RAD=150, t0=performance.now();
   function rgba(c,a){return 'rgba('+(c[0]|0)+','+(c[1]|0)+','+(c[2]|0)+','+a+')';}
   function rrect(x,y,w,h,r){ ctx.beginPath(); ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r);
     ctx.arcTo(x+w,y+h,x,y+h,r); ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath(); }
@@ -1126,12 +1163,12 @@
     nodes.forEach(function(n){
       var tbx=(n.cbx!=null?n.cbx:n.rbx), tby=(n.cby!=null?n.cby:n.rby);
       n.bx+=(tbx-n.bx)*0.06; n.by+=(tby-n.by)*0.06;
-      n.x=n.bx+Math.sin(t*n.sp+n.ph)*n.amp*(reduce?0:1);
-      n.y=n.by+Math.cos(t*n.sp*0.8+n.ph)*n.amp*0.7*(reduce?0:1);
+      n.x=n.bx+Math.sin(t*n.sp*0.7+n.ph)*n.amp*0.35*(reduce?0:1);
+      n.y=n.by+Math.cos(t*n.sp*0.56+n.ph)*n.amp*0.3*(reduce?0:1);
     });
     var query=null, qd=RAD;
     nodes.forEach(function(n){var target=0;
-      if(mouse.on){var d=Math.hypot(n.x-mouse.x,n.y-mouse.y); if(d<RAD){target=1-d/RAD; if(d<qd){qd=d;query=n;}}}
+      if(mouse.on){var d=Math.hypot(n.x-mouse.x,n.y-mouse.y); if(d<RAD){target=(1-d/RAD)*0.55; if(d<qd){qd=d;query=n;}}}
       if(n===hov)target=1; if(n.force>target)target=n.force;
       n.act+=(target-n.act)*0.14;});
     ripples.forEach(function(rp){ nodes.forEach(function(n){var d=Math.hypot(n.x-rp.x,n.y-rp.y);
@@ -1148,12 +1185,12 @@
     ctx.fillText(EN?'// latent space · '+NS+' concepts + '+NP+' projects · cosine similarity':'// espace latent · '+NS+' concepts + '+NP+' projets · similarité cosinus', zx0, zy0-22);
 
     // arêtes + signaux
-    edges.forEach(function(e,i){ var A=e[0],B=e[1], dm=1-0.7*Math.max(A.dim,B.dim), pulse=(0.07+0.04*Math.sin(t*1.2+e[2]))*dm;
+    edges.forEach(function(e,i){ var A=e[0],B=e[1], dm=1-0.7*Math.max(A.dim,B.dim), pulse=(0.045+0.02*Math.sin(t*1.2+e[2]))*dm;
       ctx.strokeStyle=rgba(BLUE,pulse); ctx.lineWidth=1; line(A,B);
-      if(!reduce) comet(A,B,(t*0.16+i*0.137)%1,GOLD,0.5*dm,1.5); });
+      if(!reduce && i===Math.floor(t/2.4)%edges.length) comet(A,B,(t/2.4)%1,GOLD,0.6*dm,1.6); });
     // liens projets -> competences
-    pedges.forEach(function(e,i){ var P=e[0],S=e[1], on=(query&&(query===P||query===S))?query.act:0;
-      if(on<0.2) ctx.setLineDash([2,5]); ctx.strokeStyle=rgba(PINK,(0.05+0.8*on)*(1-0.7*P.dim)); ctx.lineWidth=1+0.8*on; line(S,P); ctx.setLineDash([]);
+    pedges.forEach(function(e,i){ var P=e[0],S=e[1], on=(query&&(query===P||query===S))?query.act:0; if(on<0.03) return;
+      if(on<0.2) ctx.setLineDash([2,5]); ctx.strokeStyle=rgba(PINK,0.75*on*(1-0.7*P.dim)); ctx.lineWidth=1+0.8*on; line(S,P); ctx.setLineDash([]);
       if(!reduce && on>0.05) comet(S,P,(t*0.55+i*0.21)%1,[255,170,205],0.9*on,2.3); });
     // voisins les plus proches + score de similarite cosinus
     if(query && !query.p){ query.sim.slice(0,3).forEach(function(s,k){ var B=idx[s.w]; if(!B)return; var a=(0.25+0.6*s.s)*query.act;
@@ -1164,7 +1201,7 @@
         ct.style.transform='translate('+(query.x+(B.x-query.x)*0.5)+'px,'+(query.y+(B.y-query.y)*0.5)+'px) translate(-50%,-50%)'; ct.style.opacity=al.toFixed(3); } }); }
     COS.forEach(function(ct,k){ if(!(query && !query.p && query.act>0.35 && k<3)) ct.style.opacity=0; });
     if(mouse.on){ nodes.forEach(function(n){ var dm=Math.hypot(n.x-mouse.x,n.y-mouse.y);
-      if(dm<RAD && n.act>0.04){ ctx.strokeStyle=rgba(GOLD,n.act*(1-dm/RAD)*0.5); ctx.lineWidth=1;
+      if(dm<RAD && n.act>0.04){ ctx.strokeStyle=rgba(GOLD,n.act*(1-dm/RAD)*0.14); ctx.lineWidth=1;
       ctx.beginPath(); ctx.moveTo(mouse.x,mouse.y); ctx.lineTo(n.x,n.y); ctx.stroke(); }}); }
 
     // points étiquetés
@@ -1184,7 +1221,7 @@
       var lx=leftSide?(n.x-11-n.lw):(n.x+11);
       n.el.style.transform='translate('+lx+'px,'+n.y+'px) translate(0,-50%) scale('+s.toFixed(3)+')';
       n.el.style.transformOrigin=leftSide?'right center':'left center';
-      n.el.style.opacity=((0.6+n.act*0.4)*(1-0.75*n.dim)).toFixed(3);
+      n.el.style.opacity=((0.52+n.act*0.48)*(1-0.9*n.dim)).toFixed(3);
       if(n.act>0.06){ n.el.style.color='#FDECC0'; n.el.style.textShadow='0 0 14px rgba(246,197,96,'+(0.5*n.act)+')'; }
       else { n.el.style.color=''; n.el.style.textShadow=''; }});
 
@@ -1299,18 +1336,8 @@
     if(_ct){
       var _lines=[].slice.call(document.querySelectorAll('#certLines .ct-line')), _sum=document.getElementById('certSum');
       _lines.forEach(function(l){ var cert=l.getAttribute('data-cert'); if(cert){ l.addEventListener('click',function(){ open('<img class="cert" src="'+cert+'" alt="Certificat">'); }); } });
-      var _started=false;
-      function _runCerts(){ if(_started) return; _started=true; var i=0;
-        (function step(){
-          if(i>=_lines.length){ setTimeout(function(){ _sum.innerHTML='<span class="ct-pr">\u2192</span>'+_lines.length+(window.LANG==='en'?' certifications verified, 0 failed':' certifications v\u00e9rifi\u00e9es, 0 \u00e9chec'); _sum.classList.add('show'); }, 260); return; }
-          var l=_lines[i]; l.classList.add('show');
-          setTimeout(function(){ l.classList.add('ok'); }, 240);
-          i++; setTimeout(step, 430);
-        })();
-      }
-      var _io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) _runCerts(); }); },{threshold:.3});
-      _io.observe(_ct);
-      document.addEventListener('langchange',function(){ if(_sum.classList.contains('show')) _sum.innerHTML='<span class="ct-pr">\u2192</span>'+_lines.length+(window.LANG==='en'?' certifications verified, 0 failed':' certifications v\u00e9rifi\u00e9es, 0 \u00e9chec'); });
+      _sum.innerHTML='<span class="ct-pr">\u2192</span>'+_lines.length+(window.LANG==='en'?' certifications verified, 0 failed':' certifications v\u00e9rifi\u00e9es, 0 \u00e9chec');
+      document.addEventListener('langchange',function(){ _sum.innerHTML='<span class="ct-pr">\u2192</span>'+_lines.length+(window.LANG==='en'?' certifications verified, 0 failed':' certifications v\u00e9rifi\u00e9es, 0 \u00e9chec'); });
     }
     // Bandeau « Ce que je construis » : vignettes + ouverture de la galerie
     var SH={relais:window.SHOTS_relais,datalyst:window.SHOTS_datalyst,veille:window.SHOTS_veille,reunions:window.SHOTS_reunions,plantes:window.SHOTS_plantes};
@@ -1344,13 +1371,14 @@
   <button id="ragLauncher" aria-label="Ouvrir l'assistant">
     <svg viewBox="0 0 120 134" aria-hidden="true">
       <defs>
-        <linearGradient id="hbCone" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#FF4D9D" stop-opacity=".38"/><stop offset=".6" stop-color="#5B6BFF" stop-opacity=".08"/><stop offset="1" stop-color="#5B6BFF" stop-opacity="0"/></linearGradient>
-        <linearGradient id="hbFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8F9BFF" stop-opacity=".22"/><stop offset="1" stop-color="#FF4D9D" stop-opacity=".1"/></linearGradient>
+        <linearGradient id="hbCone" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#F6C560" stop-opacity=".4"/><stop offset=".6" stop-color="#FF4D9D" stop-opacity=".08"/><stop offset="1" stop-color="#FF4D9D" stop-opacity="0"/></linearGradient>
+        <linearGradient id="hbGrad" gradientUnits="userSpaceOnUse" x1="13" y1="10" x2="107" y2="86"><stop offset="0" stop-color="#FF4D9D"/><stop offset=".5" stop-color="#F6C560"/><stop offset="1" stop-color="#5B6BFF"/></linearGradient>
+        <linearGradient id="hbFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF4D9D" stop-opacity=".2"/><stop offset="1" stop-color="#5B6BFF" stop-opacity=".08"/></linearGradient>
         <radialGradient id="hbBase" cx=".5" cy=".4" r=".7"><stop offset="0" stop-color="#2A2E52"/><stop offset="1" stop-color="#0B0C18"/></radialGradient>
         <filter id="hbGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
         <filter id="hbSoft" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.4"/></filter>
         <clipPath id="hbClip"><rect x="24" y="16" width="72" height="70" rx="30"/></clipPath>
-        <pattern id="hbScanP" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#C9D0FF" opacity=".16"/></pattern>
+        <pattern id="hbScanP" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#FDECC0" opacity=".16"/></pattern>
         <g id="hbHead" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <line x1="60" y1="16" x2="60" y2="7"/><circle cx="60" cy="5" r="2.4"/>
           <rect x="13" y="40" width="11" height="28" rx="5.5"/><rect x="96" y="40" width="11" height="28" rx="5.5"/>
@@ -1361,17 +1389,17 @@
       </defs>
       <path class="hb-cone" d="M40 121 L18 34 L102 34 L80 121 Z" fill="url(#hbCone)"/>
       <ellipse cx="60" cy="123" rx="24" ry="6" fill="url(#hbBase)" stroke="#3A3F6A" stroke-width=".8"/>
-      <ellipse cx="60" cy="121.5" rx="15" ry="3" fill="#FF4D9D" filter="url(#hbSoft)" opacity=".9"/>
-      <ellipse cx="60" cy="121.5" rx="10" ry="1.8" fill="#FFD3E7"/>
+      <ellipse cx="60" cy="121.5" rx="15" ry="3" fill="#FF7A3D" filter="url(#hbSoft)" opacity=".9"/>
+      <ellipse cx="60" cy="121.5" rx="10" ry="1.8" fill="#FDECC0"/>
       <g class="hb-float">
-        <g class="hb-ghost" transform="translate(2.5 0)"><use href="#hbHead" stroke="#FF4D9D" stroke-width="1.4"/></g>
+        <g class="hb-ghost" transform="translate(2.5 0)"><use href="#hbHead" stroke="#F6C560" stroke-width="1.4"/></g>
         <g class="hb-holo">
           <rect x="24" y="16" width="72" height="70" rx="30" fill="url(#hbFill)"/>
           <g clip-path="url(#hbClip)"><rect class="hb-scan" x="20" y="10" width="80" height="84" fill="url(#hbScanP)"/></g>
-          <use href="#hbHead" stroke="#A9B4FF" stroke-width="1.4" filter="url(#hbGlow)"/>
+          <use href="#hbHead" stroke="url(#hbGrad)" stroke-width="1.5" filter="url(#hbGlow)"/>
           <g id="hbEyes">
-            <g class="hb-lids" filter="url(#hbGlow)"><rect x="43" y="43" width="10" height="14" rx="5" fill="#FF8CBF"/><rect x="67" y="43" width="10" height="14" rx="5" fill="#FF8CBF"/></g>
-            <g class="hb-happy" fill="none" stroke="#FF8CBF" stroke-width="3" stroke-linecap="round" filter="url(#hbGlow)"><path d="M42.5 54 Q48 45 53.5 54"/><path d="M66.5 54 Q72 45 77.5 54"/></g>
+            <g class="hb-lids" filter="url(#hbGlow)" style="filter:url(#hbGlow) drop-shadow(0 0 3px rgba(246,197,96,.85))"><rect x="43" y="43" width="10" height="14" rx="5" fill="#FDECC0"/><rect x="67" y="43" width="10" height="14" rx="5" fill="#FDECC0"/></g>
+            <g class="hb-happy" fill="none" stroke="#FDECC0" stroke-width="3" stroke-linecap="round" filter="url(#hbGlow)"><path d="M42.5 54 Q48 45 53.5 54"/><path d="M66.5 54 Q72 45 77.5 54"/></g>
           </g>
         </g>
       </g>
@@ -1381,9 +1409,9 @@
     <div class="rp-head">
       <span class="rp-ava" id="ragAva"><svg viewBox="8 -2 104 92" aria-hidden="true">
         <rect x="24" y="16" width="72" height="70" rx="30" fill="url(#hbFill)"/>
-        <use href="#hbHead" stroke="#A9B4FF" stroke-width="3" filter="url(#hbGlow)"/>
-        <g class="av-eyes" filter="url(#hbGlow)"><rect x="43" y="42" width="11" height="16" rx="5.5" fill="#FF8CBF"/><rect x="66" y="42" width="11" height="16" rx="5.5" fill="#FF8CBF"/></g>
-        <g class="av-dots" fill="#FF8CBF" filter="url(#hbGlow)"><circle cx="48" cy="50" r="4"/><circle cx="60" cy="50" r="4"/><circle cx="72" cy="50" r="4"/></g>
+        <use href="#hbHead" stroke="url(#hbGrad)" stroke-width="3" filter="url(#hbGlow)"/>
+        <g class="av-eyes" filter="url(#hbGlow)"><rect x="43" y="42" width="11" height="16" rx="5.5" fill="#FDECC0"/><rect x="66" y="42" width="11" height="16" rx="5.5" fill="#FDECC0"/></g>
+        <g class="av-dots" fill="#FDECC0" filter="url(#hbGlow)"><circle cx="48" cy="50" r="4"/><circle cx="60" cy="50" r="4"/><circle cx="72" cy="50" r="4"/></g>
       </svg></span>
       <div class="rp-ttl"><b>Assistant</b><span>sur le profil de Narimane</span></div>
       <button id="ragClose" aria-label="Fermer">✕</button>
@@ -1533,6 +1561,44 @@ var KB=[
   L.addEventListener("click",hideTease);
   if(!seen) setTimeout(function(){ if(panel&&panel.classList.contains("open")) return;
     tease.classList.add("show"); setTimeout(hideTease,10000); },3200);
+})();
+</script>
+<script>
+(function(){
+  var reduce=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+  // chiffres cles : compteur anime a l'apparition
+  var k=document.querySelector('.kpis');
+  if(k){
+    var run=function(){ if(k.classList.contains('on')) return; k.classList.add('on');
+      k.querySelectorAll('.kn').forEach(function(el,i){ var to=+el.getAttribute('data-to')||0; if(reduce){ el.textContent=to; return; }
+        var t0=null, dur=1100+i*150; el.textContent='0';
+        (function step(ts){ if(t0==null) t0=ts; var p=Math.min(1,(ts-t0)/dur), e=1-Math.pow(1-p,3);
+          el.textContent=Math.round(to*e); if(p<1) requestAnimationFrame(step); })(performance.now()); }); };
+    if('IntersectionObserver' in window){ var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ run(); io.disconnect(); } }); },{threshold:.35}); io.observe(k); }
+    else run();
+  }
+  // parcours : voir / masquer le detail
+  document.querySelectorAll('.ti').forEach(function(ti){
+    var b=ti.querySelector('.xp-more'), d=ti.querySelector('.xp-desc'); if(!b||!d) return;
+    b.addEventListener('click',function(){
+      var open=!ti.classList.contains('open');
+      if(open){ ti.classList.add('open'); d.style.maxHeight=d.scrollHeight+'px'; }
+      else { d.style.maxHeight=d.scrollHeight+'px'; void d.offsetHeight; ti.classList.remove('open'); d.style.maxHeight='0px'; }
+      b.setAttribute('aria-expanded',open?'true':'false');
+    });
+    d.addEventListener('transitionend',function(e){ if(e.propertyName!=='max-height') return;
+      if(ti.classList.contains('open')) d.style.maxHeight='none';
+      if(window.ScrollTrigger) ScrollTrigger.refresh(); });
+  });
+  // copier l'email
+  var c=document.getElementById('copyMail');
+  if(c){ c.addEventListener('click',function(){
+    var mail=c.getAttribute('data-mail');
+    function done(){ c.classList.add('copied'); clearTimeout(c._t); c._t=setTimeout(function(){ c.classList.remove('copied'); },2200); }
+    function fallback(){ var ta=document.createElement('textarea'); ta.value=mail; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(e){} ta.remove(); done(); }
+    if(navigator.clipboard&&window.isSecureContext){ navigator.clipboard.writeText(mail).then(done,fallback); } else fallback();
+  }); }
 })();
 </script>
 </body>
