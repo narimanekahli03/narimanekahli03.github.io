@@ -1601,5 +1601,23 @@ var KB=[
   }); }
 })();
 </script>
+<script>
+/* Statistiques (GoatCounter, sans cookies) : clics importants comptés comme événements */
+(function(){
+  function ev(path,title){ try{ if(window.goatcounter&&goatcounter.count) goatcounter.count({path:path,title:title||path,event:true}); }catch(e){} }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest&&e.target.closest('a,button'); if(!t) return;
+    if(t.classList.contains('dl-cv')) return ev('clic-cv','Téléchargement du CV');
+    if(t.id==='copyMail') return ev('clic-copier-email','Email copié');
+    if(t.id==='langTg') return ev('clic-langue','Changement de langue');
+    if(t.id==='ragLauncher') return ev('assistant-ouvert','Assistant ouvert');
+    if(t.closest('#ragChips')) return ev('assistant-question','Question à l\'assistant');
+    var h=t.getAttribute('href')||'';
+    if(h.indexOf('mailto:')===0) return ev('clic-email','Clic email');
+    if(/^https?:/.test(h)){ try{ var u=new URL(h); ev('lien-'+u.hostname.replace(/^www\./,'')+u.pathname.replace(/\/$/,''),'Lien sortant'); }catch(_){} }
+  },true);
+})();
+</script>
+<script data-goatcounter="https://narimane.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
