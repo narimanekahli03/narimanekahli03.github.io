@@ -255,11 +255,9 @@
   .foot a:hover{color:var(--cyan)}
 
   /* ---------- reveal ---------- */
-  .rv{opacity:0;transform:translateY(26px)}
-  @media(prefers-reduced-motion:no-preference){.rv{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}}
-  .rv.in{opacity:1;transform:none}
+  /* contenu visible directement, sans animation d'apparition */
   @media(prefers-reduced-motion:no-preference){
-    .stg>*{opacity:0;transform:translateY(22px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+    
     .stg.in>*{opacity:1;transform:none}
     .stg.in>*:nth-child(2){transition-delay:.09s}.stg.in>*:nth-child(3){transition-delay:.18s}
     .stg.in>*:nth-child(4){transition-delay:.27s}.stg.in>*:nth-child(5){transition-delay:.36s}
@@ -972,11 +970,6 @@ button.btn{background:none;font-family:var(--mono)}
     scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}});
   gsap.to('.hero-inner', {yPercent:-6, opacity:.35, ease:'none',
     scrollTrigger:{trigger:'.hero', start:'top top', end:'bottom top', scrub:true}});
-  // Titres de section : léger glissé
-  gsap.utils.toArray('.head h2').forEach(function(el){
-    gsap.from(el,{yPercent:14, ease:'none',
-      scrollTrigger:{trigger:el, start:'top 92%', end:'top 45%', scrub:true}});
-  });
 })();
 
 // ===== Constellation d'embeddings - points étiquetés (droite du texte) =====
