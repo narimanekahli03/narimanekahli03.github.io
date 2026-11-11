@@ -461,7 +461,7 @@
 </script>
 <style>
 /* chiffres cles */
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .kpi{position:relative;display:block;overflow:hidden;padding:26px 24px 24px;border:1px solid var(--line);border-radius:18px;
   background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012));transition:border-color .3s,transform .3s,box-shadow .3s}
 .kpi::before{content:"";position:absolute;inset:-40% -20% auto auto;width:180px;height:180px;border-radius:50%;
@@ -478,7 +478,7 @@
   background:linear-gradient(90deg,var(--violet),var(--cyan),var(--azure));transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
 .kpis.on .kbar{transform:scaleX(1)}
 .kpis.on .kpi:nth-child(2) .kbar{transition-delay:.12s}.kpis.on .kpi:nth-child(3) .kbar{transition-delay:.24s}.kpis.on .kpi:nth-child(4) .kbar{transition-delay:.36s}
-@media(max-width:860px){.kpis{grid-template-columns:repeat(2,1fr);gap:12px}.kpi{padding:20px 18px}}
+@media(max-width:860px){.kpis{grid-template-columns:repeat(2,1fr);gap:12px}.kpi{padding:20px 18px}.kpi:last-child{grid-column:span 2}}
 /* parcours repliable */
 .ti .xp-desc{overflow:hidden;max-height:0;opacity:0;margin-top:0;transition:max-height .5s cubic-bezier(.2,.8,.2,1),opacity .35s ease,margin-top .35s ease}
 .ti.open .xp-desc{opacity:1;margin-top:16px}
@@ -579,7 +579,6 @@ button.btn{background:none;font-family:var(--mono)}
     <div class="pb-head"><span class="eyebrow">En chiffres</span><h2>Des produits d'IA réels, de l'idée à la production.</h2></div>
     <div class="kpis">
       <a class="kpi" href="#path"><div class="kv"><span class="kn" data-to="2">2</span></div><div class="kl">Masters</div><div class="ks">Data Science &amp; Systèmes Embarqués</div><i class="kbar"></i></a>
-      <a class="kpi" href="#path"><div class="kv"><span class="kn" data-to="3">3</span><span class="ku">ans</span></div><div class="kl">d'expérience en conseil</div><div class="ks">Tech et avant-vente</div><i class="kbar"></i></a>
       <a class="kpi" href="#creds"><div class="kv"><span class="kn" data-to="6">6</span></div><div class="kl">Certifications</div><div class="ks">NVIDIA, Huawei, Microsoft…</div><i class="kbar"></i></a>
       <a class="kpi" href="#work"><div class="kv"><span class="kn" data-to="6">6</span></div><div class="kl">Projets IA</div><div class="ks">conçus de bout en bout</div><i class="kbar"></i></a>
     </div>
